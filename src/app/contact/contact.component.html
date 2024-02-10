@@ -1,0 +1,32 @@
+<section class="vh-100">
+  <div class="text-center container">
+    <h1 class="py-1 head fw-bold">CONATCT SECTION</h1>
+    <div class="d-flex align-items-center justify-content-center">
+      <div class="line"></div>
+      <i class="fa-solid fa-star p-3 fs-3"></i>
+      <div class="line"></div>
+    </div>
+
+  </div> 
+  <div class="container d-flex align-items-center justify-content-center">
+<form action="" class="border-0">
+  <div class="pb-4 inputbox">
+    <label for="inputField" class="pb-3" *ngIf="showLabel1">userName:</label>
+    <input type="text" placeholder="userName"  (input)="onInputChange($event, 1)"  class="form-control py-2 border-0 shadow-sm" id="inputField">
+  </div>
+  <div class="pb-4 inputbox">
+    <label  for="inputField1" class="pb-3" *ngIf="showLabel2">userAge:</label>
+    <input type="number" name="" placeholder="userAge" id="inputField1" class="form-control py-2 border-0 shadow-sm" (input)="onInputChange($event, 2)">
+  </div>
+  <div class="pb-4 inputbox">
+    <label  for="inputField2" class="pb-3" *ngIf="showLabel3">userEmail</label>
+    <input  type="email" name="" placeholder="userEmail" id="inputField2" class="form-control py-2 border-0 shadow-sm" (input)="onInputChange($event, 3)">
+  </div>
+  <div class="pb-4 inputbox">
+    <label  for="inputField3" class="pb-3" *ngIf="showLabel4">userPassword:</label>
+    <input type="password" name="" placeholder="userPassword" id="inputField3" class="form-control py-2 border-0 shadow-sm" (input)="onInputChange($event, 4)">
+  </div>
+  <button class="btn text-white">Send Message</button>
+</form>
+</div>
+</section>
